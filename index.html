@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doppler Effect | Open Source Engineering</title>
+    <title>Doppler Effect | Richard [Last Name]</title>
     <script type="module">
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
         mermaid.initialize({ startOnLoad: true });
@@ -18,15 +18,16 @@
             color: #333;
         }
         h1 { margin-bottom: 0.5rem; }
+        h2 { border-bottom: 1px solid #eee; padding-bottom: 0.5rem; margin-top: 2rem; }
         .intro { margin-bottom: 3rem; }
-        .project-card {
+        .card {
             border: 1px solid #e1e4e8;
             padding: 1.5rem;
             margin-bottom: 1.5rem;
             border-radius: 8px;
         }
-        .project-card h2 { margin-top: 0; }
-        .project-card p { margin: 0.5rem 0 1rem 0; color: #555; }
+        .card h3 { margin-top: 0; }
+        .card p { margin: 0.5rem 0 1rem 0; color: #555; }
         .links a {
             margin-right: 1rem;
             text-decoration: none;
@@ -48,17 +49,32 @@
     <h1>Doppler Effect</h1>
     <p class="intro">Software engineering, automation, and graph-based modeling.</p>
 
+    <h2>Professional Experience</h2>
+    <div class="card">
+        <h3>Senior Engineering Roles</h3>
+        <p>Experienced technical lead with a background at Oracle, Google, Marvell, and AMD, focusing on system architecture and engineering productivity.</p>
+        <a href="resume.md">View Full Resume</a>
+    </div>
+
+    <h2>Volunteering & Community</h2>
+    <div class="card">
+        <h3>Search, Rescue & Mentorship</h3>
+        <p>Active leadership roles in the Civil Air Patrol, Santa Clara County Emergency Managers Association, and The Tech Interactive.</p>
+        <a href="resume.md#extracurricular">Read about community work</a>
+    </div>
+
+    <h2>Open Source Projects</h2>
     <div class="diagram-container">
         <pre class="mermaid">
         graph TD
-            Graphable --> GitGraphable[Git Graphable]
-            Graphable --> SSMG[Semantic State Machine Graphable]
-            SSM[Semantic State Machine] --> SSMG
+            graphable --> git-graphable[git-graphable]
+            graphable --> ssmg[semantic-state-machine-graphable]
+            ssm[semantic-state-machine] --> ssmg
         </pre>
     </div>
 
-    <div class="project-card">
-        <h2>Graphable</h2>
+    <div class="card">
+        <h2>graphable</h2>
         <p>A library for representing data structures as graphs to enable complex querying and modeling.</p>
         <div class="links">
             <a href="https://github.com/TheTrueSCU/graphable">GitHub</a>
@@ -67,8 +83,8 @@
         </div>
     </div>
 
-    <div class="project-card">
-        <h2>Git Graphable</h2>
+    <div class="card">
+        <h2>git-graphable</h2>
         <p>A tool that builds and analyzes graph representations of Git repository history.</p>
         <div class="links">
             <a href="https://github.com/TheTrueSCU/git-graphable">GitHub</a>
@@ -77,8 +93,8 @@
         </div>
     </div>
 
-    <div class="project-card">
-        <h2>Semantic State Machine</h2>
+    <div class="card">
+        <h2>semantic-state-machine</h2>
         <p>A structured approach to defining state machines with clear, semantic behavior.</p>
         <div class="links">
             <a href="https://github.com/TheTrueSCU/semantic-state-machine">GitHub</a>
@@ -86,8 +102,8 @@
         </div>
     </div>
 
-    <div class="project-card">
-        <h2>Semantic State Machine Graphable</h2>
+    <div class="card">
+        <h2>semantic-state-machine-graphable</h2>
         <p>Integration between semantic state machines and graph-based analysis frameworks.</p>
         <div class="links">
             <a href="https://github.com/TheTrueSCU/semantic-state-machine-graphable">GitHub</a>
