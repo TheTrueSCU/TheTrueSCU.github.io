@@ -3,116 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doppler Effect | Richard [Last Name]</title>
+    <title>Richard West | Doppler Effect</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script type="module">
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
         mermaid.initialize({ startOnLoad: true });
     </script>
     <style>
-        body {
-            max-width: 800px;
-            margin: 4rem auto;
-            padding: 0 1rem;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        h1 { margin-bottom: 0.5rem; }
-        h2 { border-bottom: 1px solid #eee; padding-bottom: 0.5rem; margin-top: 2rem; }
-        .intro { margin-bottom: 3rem; }
-        .card {
-            border: 1px solid #e1e4e8;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-        }
-        .card h3 { margin-top: 0; }
-        .card p { margin: 0.5rem 0 1rem 0; color: #555; }
-        .links a {
-            margin-right: 1rem;
-            text-decoration: none;
-            color: #0366d6;
-            font-weight: 500;
-        }
-        .links a:hover { text-decoration: underline; }
-        .diagram-container {
-            margin: 3rem 0;
-            padding: 2rem;
-            background: #f6f8fa;
-            border-radius: 8px;
-            text-align: center;
-        }
-        footer { margin-top: 4rem; font-size: 0.9rem; color: #666; }
+        body { background-color: #f8f9fa; }
+        .hero { padding: 4rem 0; }
+        .card { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: none; }
+        .mermaid { text-align: center; margin: 2rem 0; }
+        .bio { max-width: 600px; margin: 0 auto; color: #555; }
+        details summary { cursor: pointer; color: #0366d6; font-size: 0.85rem; font-weight: 500; }
     </style>
 </head>
 <body>
-    <h1>Doppler Effect</h1>
-    <p class="intro">Software engineering, automation, and graph-based modeling.</p>
+    <div class="container">
+        <header class="hero text-center">
+            <h1 class="display-4">Richard West</h1>
+            <p class="lead">Software Architect & Open Source Contributor.</p>
+            <p class="bio mt-3">Experienced technical lead and architect specializing in high-reliability systems, engineering productivity, and large-scale infrastructure. Passionate about open-source tooling, automated validation, and community service in emergency management and STEM education.</p>
+        </header>
 
-    <h2>Professional Experience</h2>
-    <div class="card">
-        <h3>Senior Engineering Roles</h3>
-        <p>Experienced technical lead with a background at Oracle, Google, Marvell, and AMD, focusing on system architecture and engineering productivity.</p>
-        <a href="resume.md">View Full Resume</a>
+        <section class="mb-5">
+            <h2 class="mb-4">Professional Experience</h2>
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <div class="card p-3">
+                        <h3>Reliable Robotics</h3>
+                        <p class="fw-bold mb-1">Senior Software Engineer (2026 – Present)</p>
+                        <p class="small text-muted">Architecting high-reliability control systems and automated verification pipelines.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card p-3">
+                        <h3>Oracle Health</h3>
+                        <p class="fw-bold mb-1">Consulting Member of Technical Staff (2023 – 2025)</p>
+                        <p class="small text-muted">Led cross-functional teams in BCDR; architected OCI-native EHR image archiving and event-driven interoperability frameworks.</p>
+                        <details>
+                            <summary>Read details</summary>
+                            <ul class="small mt-2">
+                                <li>Technical lead of four to eight person, international team within BCDR organization.</li>
+                                <li>Drafted greenfield flexible testing cluster on OCI.</li>
+                                <li>Architected OCI-native version of CAMM7 image archiving product.</li>
+                                <li>Architected event-driven architecture to decompose monolithic EHR product.</li>
+                                <li>Mentored intern developing client-facing support diagnostics widget.</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card p-3">
+                        <h3>Google</h3>
+                        <p class="fw-bold mb-1">Software Engineer III (2018 – 2023)</p>
+                        <p class="small text-muted">Technical lead for Google Fi's readiness testing; unified disparate hardware test suites into a high-throughput, automated infrastructure.</p>
+                        <details>
+                            <summary>Read details</summary>
+                            <ul class="small mt-2">
+                                <li>Technical lead for Fi's Readiness Test Suite (FiRTS) on 1st/3rd party devices.</li>
+                                <li>Maintained and enhanced FiRTS in response to evolving market requirements.</li>
+                                <li>Developed FiRTS extension to improve QA testing throughput and efficiency.</li>
+                                <li>Developed PoC framework to unify internal Google partner hardware test suites.</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card p-3">
+                        <h3>Marvell</h3>
+                        <p class="fw-bold mb-1">Staff Engineer (2016 – 2018)</p>
+                        <p class="small text-muted">Established post-silicon validation lab infrastructure and optimized processor IP workflows via decentralized health monitoring.</p>
+                        <details>
+                            <summary>Read details</summary>
+                            <ul class="small mt-2">
+                                <li>Technical lead for ThunderX2 logic design, verification, and validation.</li>
+                                <li>Established remotely-manageable post-silicon characterization and validation lab.</li>
+                                <li>Expanded post-silicon testing cluster with host health monitoring/recovery.</li>
+                                <li>Developed enhanced version control system to improve situational awareness and minimize disk usage.</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card p-3">
+                        <h3>Broadcom</h3>
+                        <p class="fw-bold mb-1">Principal Engineer (2012 – 2016)</p>
+                        <p class="small text-muted">Architected cycle-accurate CPU models and automated, tool-agnostic validation frameworks for server processors.</p>
+                        <details>
+                            <summary>Read details</summary>
+                            <ul class="small mt-2">
+                                <li>Inaugural member of performance modeling team.</li>
+                                <li>Developed fully configurable, multi-threaded, cycle-accurate CPU/SOC software model.</li>
+                                <li>Streamlined verification workflows through tool-agnostic designs.</li>
+                                <li>Developed automated post-silicon randomized-test framework.</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card p-3">
+                        <h3>AMD</h3>
+                        <p class="fw-bold mb-1">Senior Design Engineer (2006 – 2012)</p>
+                        <p class="small text-muted">Developed statistical trace analysis and cache coherency visualization tools for high-performance CPU simulation.</p>
+                        <details>
+                            <summary>Read details</summary>
+                            <ul class="small mt-2">
+                                <li>Focus on improving microcode performance and extending simulator support for new instruction sets.</li>
+                                <li>Developed statistical analysis framework to rapidly identify benchmark traces.</li>
+                                <li>Developed XML schema, instrumentation library, and application to visualize and compare performance metrics.</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card p-3">
+                        <h3>IBM</h3>
+                        <p class="fw-bold mb-1">Engineering Co-Op (2004 – 2005)</p>
+                        <p class="small text-muted">Supported PowerPC development group with subsystem verification and bus protocol modeling.</p>
+                        <details>
+                            <summary>Read details</summary>
+                            <ul class="small mt-2">
+                                <li>Updated internal verification framework for a new PowerPC backend subsystem.</li>
+                                <li>Created a Verilog model of PowerPC memory/IO bus protocol for an external IBM customer.</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <a href="resume.md" class="btn btn-primary mt-2">View Full Resume</a>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="mb-4">Volunteering & Community</h2>
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <div class="card p-3">
+                        <h3>Civil Air Patrol</h3>
+                        <p class="fw-bold mb-1">Commander, SF Bay Group (2017 – Present)</p>
+                        <p class="small text-muted">Oversee operations for 800 members; modernized regional web infrastructure and document management systems for disaster response.</p>
+                        <details>
+                            <summary>Read details</summary>
+                            <ul class="small mt-2">
+                                <li>Commander, SF Bay Group (since Oct 2023).</li>
+                                <li>Incident Commander (trainee) for SAR and disaster response missions.</li>
+                                <li>Modernized Pacific Region’s progressive web app for reliability and feature expansion.</li>
+                                <li>Architected source-controlled document management pipeline for regulatory consistency.</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card p-3">
+                        <h3>Santa Clara County EMA</h3>
+                        <p class="fw-bold mb-1">Board VP & Member-at-Large (2019 – Present)</p>
+                        <p class="small text-muted">Provided leadership and strategic governance for regional emergency management and disaster response collaboration.</p>
+                        <details>
+                            <summary>Read details</summary>
+                            <ul class="small mt-2">
+                                <li>Board Vice President (Jan 2023 - Dec 2025).</li>
+                                <li>Board Member-at-Large (Jan 2020 - Dec 2022).</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card p-3">
+                        <h3>The Tech Interactive</h3>
+                        <p class="fw-bold mb-1">Co-Head Judge, The Tech Challenge (2007 – Present)</p>
+                        <p class="small text-muted">Architected program themes and rules; led judging operations for an annual student engineering competition.</p>
+                        <details>
+                            <summary>Read details</summary>
+                            <ul class="small mt-2">
+                                <li>Co-head judge and member of the executive team developing annual themes, rules, and program objectives.</li>
+                                <li>Train volunteer judges, settle judging disputes, and manage the judging process during the annual event.</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="mb-4">Open Source Projects</h2>
+            <pre class="mermaid">
+            graph TD
+                graphable --> git-graphable[git-graphable]
+                graphable --> ssmg[semantic-state-machine-graphable]
+                ssm[semantic-state-machine] --> ssmg
+            </pre>
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <div class="card p-3">
+                        <h3>graphable</h3>
+                        <p class="small text-muted">A library for representing data structures as graphs to enable complex querying and modeling.</p>
+                        <details>
+                            <summary>Resources</summary>
+                            <div class="mt-2">
+                                <a href="https://github.com/TheTrueSCU/graphable" class="me-2">GitHub</a>
+                                <a href="https://dopplereffect.us/graphable/" class="me-2">Docs</a>
+                                <a href="https://pypi.org/project/graphable/">PyPI</a>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card p-3">
+                        <h3>git-graphable</h3>
+                        <p class="small text-muted">A tool that builds and analyzes graph representations of Git repository history.</p>
+                        <details>
+                            <summary>Resources</summary>
+                            <div class="mt-2">
+                                <a href="https://github.com/TheTrueSCU/git-graphable" class="me-2">GitHub</a>
+                                <a href="https://dopplereffect.us/git-graphable/" class="me-2">Docs</a>
+                                <a href="https://pypi.org/project/git-graphable/">PyPI</a>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card p-3">
+                        <h3>semantic-state-machine</h3>
+                        <p class="small text-muted">A structured approach to defining state machines with clear, semantic behavior.</p>
+                        <details>
+                            <summary>Resources</summary>
+                            <div class="mt-2">
+                                <a href="https://github.com/TheTrueSCU/semantic-state-machine" class="me-2">GitHub</a>
+                                <a href="https://pypi.org/project/semantic-state-machine/">PyPI</a>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card p-3">
+                        <h3>semantic-state-machine-graphable</h3>
+                        <p class="small text-muted">Integration between semantic state machines and graph-based analysis frameworks.</p>
+                        <details>
+                            <summary>Resources</summary>
+                            <div class="mt-2">
+                                <a href="https://github.com/TheTrueSCU/semantic-state-machine-graphable" class="me-2">GitHub</a>
+                                <a href="https://pypi.org/project/semantic-state-machine-graphable/">PyPI</a>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-5 mb-4">
+            <p>Contact: <a href="mailto:richard@dopplereffect.us">richard@dopplereffect.us</a> | <a href="https://www.linkedin.com/in/richard-j-d-west">LinkedIn</a></p>
+        </footer>
     </div>
-
-    <h2>Volunteering & Community</h2>
-    <div class="card">
-        <h3>Search, Rescue & Mentorship</h3>
-        <p>Active leadership roles in the Civil Air Patrol, Santa Clara County Emergency Managers Association, and The Tech Interactive.</p>
-        <a href="resume.md#extracurricular">Read about community work</a>
-    </div>
-
-    <h2>Open Source Projects</h2>
-    <div class="diagram-container">
-        <pre class="mermaid">
-        graph TD
-            graphable --> git-graphable[git-graphable]
-            graphable --> ssmg[semantic-state-machine-graphable]
-            ssm[semantic-state-machine] --> ssmg
-        </pre>
-    </div>
-
-    <div class="card">
-        <h2>graphable</h2>
-        <p>A library for representing data structures as graphs to enable complex querying and modeling.</p>
-        <div class="links">
-            <a href="https://github.com/TheTrueSCU/graphable">GitHub</a>
-            <a href="https://dopplereffect.us/graphable/">Docs</a>
-            <a href="https://pypi.org/project/graphable/">PyPI</a>
-        </div>
-    </div>
-
-    <div class="card">
-        <h2>git-graphable</h2>
-        <p>A tool that builds and analyzes graph representations of Git repository history.</p>
-        <div class="links">
-            <a href="https://github.com/TheTrueSCU/git-graphable">GitHub</a>
-            <a href="https://dopplereffect.us/git-graphable/">Docs</a>
-            <a href="https://pypi.org/project/git-graphable/">PyPI</a>
-        </div>
-    </div>
-
-    <div class="card">
-        <h2>semantic-state-machine</h2>
-        <p>A structured approach to defining state machines with clear, semantic behavior.</p>
-        <div class="links">
-            <a href="https://github.com/TheTrueSCU/semantic-state-machine">GitHub</a>
-            <a href="https://pypi.org/project/semantic-state-machine/">PyPI</a>
-        </div>
-    </div>
-
-    <div class="card">
-        <h2>semantic-state-machine-graphable</h2>
-        <p>Integration between semantic state machines and graph-based analysis frameworks.</p>
-        <div class="links">
-            <a href="https://github.com/TheTrueSCU/semantic-state-machine-graphable">GitHub</a>
-            <a href="https://pypi.org/project/semantic-state-machine-graphable/">PyPI</a>
-        </div>
-    </div>
-
-    <footer>
-        <p>Contact: <a href="mailto:richard@dopplereffect.us">richard@dopplereffect.us</a></p>
-    </footer>
 </body>
 </html>
